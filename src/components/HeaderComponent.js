@@ -14,15 +14,15 @@ function Header() {
     return(
         <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
+                <NavbarBrand href="/">PhotoStore</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <NavLink href="/components/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">Shop</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
@@ -30,10 +30,10 @@ function Header() {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                    Option 1
+                                    Upload
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Option 2
+                                    Download
                                 </DropdownItem>
                                 <DropdownItem divider />
                                 <DropdownItem>
@@ -42,7 +42,7 @@ function Header() {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
+                    <NavbarText>Cart</NavbarText>
                 </Collapse>
             </Navbar>
         </div>
